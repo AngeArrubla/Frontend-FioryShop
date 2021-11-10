@@ -1,0 +1,21 @@
+#navbar{
+    background-color: #602C84;
+    width: 100%;
+}
+.Navbar.Brand{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+}
+#logo{
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+}
+#dropdown-button{
+    background: linear-gradient(90deg,#BF1064,#602C84);
+}
+.dropdown-header{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
