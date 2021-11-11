@@ -1,8 +1,8 @@
 import { Container } from 'react-bootstrap';
-import './App.css';
+import './styles/_globals.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Login from './components/login/login';
-import Navbar from './components/navbar/navbar';
+import Login from './components/login';
+import Navbar from './components/navbar';
 
 function App() {
   return (

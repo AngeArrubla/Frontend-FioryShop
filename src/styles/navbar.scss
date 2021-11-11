@@ -1,6 +1,7 @@
+@import 'globals';
+
 #navbar{
-    background-color: #602C84;
-    width: 100%;
+    background-color: #6a3292;
 }
 .Navbar.Brand{
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -12,7 +13,7 @@
     margin-right: 20px;
 }
 #dropdown-button{
-    background: linear-gradient(90deg,#BF1064,#602C84);
+    @include button;
 }
 .dropdown-header{
     font-size: 30px;

@@ -1,6 +1,6 @@
 import React from 'react';//imr trae el import
 import { Form, Button, Col, Row, Container } from 'react-bootstrap';//la importa al poner container
-import './login.css';
+import '../styles/login.scss';
 
 export default class login extends React.Component { //ccc clase con constructor
     constructor(props) {

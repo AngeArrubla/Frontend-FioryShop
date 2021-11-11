@@ -1,8 +1,8 @@
 import React from 'react';
-import {Container, Navbar, Nav, Dropdown, DropdownButton} from 'react-bootstrap';
+import {Container, Navbar, Dropdown, DropdownButton} from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUserCircle } from '@fortawesome/free-solid-svg-icons';
-import './navbar.css';
+import '../styles/navbar.scss';
 
 export default class navbar extends React.Component {
     constructor(props) {
@@ -11,7 +11,7 @@ export default class navbar extends React.Component {
     }
     render() {
         return (
-            <Navbar id="navbar">
+            <Navbar fixed="top" id="navbar">
                 <Container>
                     <img id="logo" src="https://i.imgur.com/GFKk2ED.png" className="d-inline-block align-top" alt="logo"/>
                     <Navbar.Brand href="#home">Fiorys-Shop
