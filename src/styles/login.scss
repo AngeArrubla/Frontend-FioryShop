@@ -1,21 +1,29 @@
 @import 'globals';
 
-#login-container{
-    margin-top: 20%;
+#container-login{
+    margin-top: 200px;
+    display: grid;
+    place-items: center;
+    width: 50%;
+    font-family: 'Lucida Sans',Verdana, sans-serif;
+}
+#container-login h2{
+    margin-bottom: 30px;
+
+}
+#container-form {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    font-family: 'Lucida Sans',Verdana, sans-serif;
 }
 
-#login-container h2,
-#login-container button,
-#login-container form {
+#container-form button{
+    margin-top:20px;
     width: 100%;
-}
-
-#login-container button{
-    margin-top:15px;
 
     @include button;
 }
 
-#login-container .form-label{
+#container-login .form-label{
     float:left;
 }
