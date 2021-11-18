@@ -70,7 +70,6 @@ export default class login extends React.Component { //ccc clase con constructor
                     </Form.Group>
                     <Button
                         variant="primary"
-                        type="password"
                         onClick ={ () =>{
                             this.iniciarSesion();
                         }}

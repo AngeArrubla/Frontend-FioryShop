@@ -25,6 +25,22 @@ export default class EmpleadosBuscar extends React.Component{
                 <Row>
                     <h1>Buscar empleados</h1>
                 </Row>
+                <Row>
+                    <h1>Buscar empleados</h1>
+                </Row>
+
+                <Row>
+                    <h1>Buscar empleados</h1>
+                </Row><Row>
+                    <h1>Buscar empleados</h1>
+                </Row>
+                <Row>
+                    <h1>Buscar empleados</h1>
+                </Row>
+
+                <Row>
+                    <h1>Buscar empleados</h1>
+                </Row>
             </Container>
         );
     }

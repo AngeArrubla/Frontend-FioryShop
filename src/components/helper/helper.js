@@ -17,6 +17,7 @@ export function getSession(){
 
 function renovarSesion(){
     const sesion = getSession();
+
     if(!sesion) window.location.href='/login';
 
     cookies.set('_s', sesion,{
