@@ -21,7 +21,7 @@ export default class navbar extends React.Component {
                             <Dropdown.Header id="dropdown-header">
                                 <FontAwesomeIcon icon={faUserCircle}/>
                             </Dropdown.Header>
-                            <Dropdown.Item href="#/action-1">Cerrar sesión</Dropdown.Item>
+                            <Dropdown.Item id="logout" href="#/action-1">Cerrar sesión</Dropdown.Item>
                         </DropdownButton>
                 </Container>
             </Navbar>

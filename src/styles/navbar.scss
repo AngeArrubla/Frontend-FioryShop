@@ -3,12 +3,13 @@
 #navbar{
     background-color:$background-color;
 }
-.Navbar.Brand{
+/* #navbar span{
     font-family: 'Lucida Sans',Verdana, sans-serif;
+    color: $secondary-color;
 }
 #usuario-brand{
     color: white;
-}
+} */
 #logo{
     width: 60px;
     height: 60px;
@@ -16,6 +17,9 @@
 }
 #dropdown-button{
     @include button;
+}
+#logout{
+    text-align: center;
 }
 .dropdown-header{
     font-size: 30px;
