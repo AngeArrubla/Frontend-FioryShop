@@ -14,8 +14,8 @@ export default class navbar extends React.Component {
             <Navbar fixed="top" id="navbar">
                 <Container>
                     <img id="logo" src="https://i.imgur.com/GFKk2ED.png" className="d-inline-block align-top" alt="logo"/>
-                    <Navbar.Brand href="#home">Fiorys-Shop
-                        <span id="usuario-brand"></span>
+                    <Navbar.Brand href="#home">
+                        <span id="usuario-brand">Fiorys Shop</span>
                     </Navbar.Brand>
                         <DropdownButton title="Usuario" id="dropdown-button">
                             <Dropdown.Header id="dropdown-header">

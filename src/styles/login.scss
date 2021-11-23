@@ -5,16 +5,18 @@
     display: grid;
     place-items: center;
     width: 50%;
-    font-family: 'Lucida Sans',Verdana, sans-serif;
 }
 #container-login h2{
     margin-bottom: 30px;
-
+    font-family: $principal-font;
+    font-weight: 700;
+    color: $primary-color;
 }
 #container-form {
     display: grid;
     grid-template-rows: auto 1fr auto;
-    font-family: 'Lucida Sans',Verdana, sans-serif;
+    @include title;
+    font-size: 20px;
 }
 
 #container-form button{

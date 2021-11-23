@@ -4,20 +4,24 @@
     margin-top: 150px;
 }
 #empleados-buscar-container h1{
-    text-align: center;
-    color: $secondary-color;
+    @include title;
 }
 
 .react-bs-table-sizePerPage-dropdown .dropdown-toggle{
     margin: 20px 0 20px 0;
-    background-color: $primary-color;
+    @include button;
 }
 
 .search-label{
     float: right;
     padding-bottom: 10px;
+
 }
 
 .sr-only{
     font-size: 0;
+}
+/* Paginacion */
+.page-link{
+    color: $secondary-color;
 }
