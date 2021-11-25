@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router,Route,Switch} from 'react-router-dom';
 import Login from '../components/login';
 import PrivateRoute from '../components/auth/privateRoute';
-import Empleados from '../components/EmpleadosBuscar';
+import Empleados from '../components/empleados/index';
 import NoAuthorized from '../components/NoAuthorized';
 
 export default function AppRouter(){

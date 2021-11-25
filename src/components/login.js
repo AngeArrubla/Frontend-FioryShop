@@ -2,7 +2,7 @@ import React from 'react';//imr trae el import
 import axios from 'axios';
 import { Form, Button, Container } from 'react-bootstrap';//la importa al poner container
 import {APIHOST as host} from '../components/app.json'
-import '../styles/login.scss';
+import './styles/login.scss';
 import {isNull} from 'util';
 import Cookies from 'universal-cookie';
 import {calcularExpiracionSesion} from './helper/helper';

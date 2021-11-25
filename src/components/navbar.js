@@ -2,7 +2,7 @@ import React from 'react';
 import {Container, Navbar, Dropdown, DropdownButton} from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUserCircle } from '@fortawesome/free-solid-svg-icons';
-import '../styles/navbar.scss';
+import './styles/navbar.scss';
 
 export default class navbar extends React.Component {
     constructor(props) {

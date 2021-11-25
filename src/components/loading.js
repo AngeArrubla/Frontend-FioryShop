@@ -1,6 +1,6 @@
 import React from "react";
 import { Spinner} from 'react-bootstrap';
-import '../styles/loading.scss';
+import './styles/loading.scss';
 
 export default class Loading extends React.Component {
     constructor(props) {

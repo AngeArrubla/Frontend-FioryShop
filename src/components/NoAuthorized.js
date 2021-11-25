@@ -1,5 +1,5 @@
 import React from 'react'
-import '../styles/NoAuthorized.scss';
+import './styles/NoAuthorized.scss';
 
 export default function NoAuthorized() {
     return (
