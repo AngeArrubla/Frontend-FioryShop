@@ -1,4 +1,4 @@
-import './styles/_globals.scss';
+import './components/styles/_globals.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './components/navbar';
 

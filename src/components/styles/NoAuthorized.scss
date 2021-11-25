@@ -1,0 +1,18 @@
+@import 'globals';
+
+#noAuthorized{
+    display: grid;
+    place-items: center;
+    padding-top: 200px;
+
+    img{
+        width: 500px;
+        height: auto;
+        padding-bottom: 30px;
+    }
+
+    h1{
+        @include title;
+        color: $secondary-color;
+    }
+}

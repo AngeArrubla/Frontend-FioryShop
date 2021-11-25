@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500;700&display=swap');
+
+$primary-color:#602C84;
+$secondary-color:#BC1064;
+$background-color:#d5bffd;
+$name-font:'Handlee', cursive;
+$principal-font:'Dosis', sans-serif;
+
+@mixin button{
+    background-image: linear-gradient(to right, #BC1064, #602C84, #602C84,#BC1064);
+    box-shadow: 0 3px 11px 0 rgba(25, 19, 32, 0.75);
+    background-size: 300% 100%;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all .6s ease-in-out;
+    font-family: $principal-font;
+    &:hover {
+        background-position: 100% 0;
+        transition: all .6s ease-in-out;
+    }
+}
+
+@mixin title{
+    text-align: center;
+    font-size: 30px;
+    color: $primary-color;
+    font-family: $principal-font;
+    font-weight: 700;
+}

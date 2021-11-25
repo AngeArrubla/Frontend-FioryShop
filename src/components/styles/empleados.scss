@@ -1,0 +1,28 @@
+@import 'globals';
+
+#empleados-buscar-container,
+#empleados-container {
+    margin-top: 150px;
+}
+#empleados-buscar-container h1{
+    @include title;
+}
+
+.react-bs-table-sizePerPage-dropdown .dropdown-toggle{
+    margin: 20px 0 20px 0;
+    @include button;
+}
+
+.search-label{
+    float: right;
+    padding-bottom: 10px;
+
+}
+
+.sr-only{
+    font-size: 0;
+}
+/* Paginacion */
+.page-link{
+    color: $secondary-color;
+}

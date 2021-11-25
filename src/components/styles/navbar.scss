@@ -1,0 +1,29 @@
+@import 'globals';
+
+
+#navbar{
+    background-color:$background-color;
+}
+#logo{
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+}
+#usuario-brand{
+    color: $secondary-color;
+    font-family: $name-font;
+    font-size: 50px;
+    font-weight:bolder;
+    -webkit-text-stroke: 0.1px #7e0a42;
+}
+#dropdown-button{
+    @include button;
+}
+#logout{
+    text-align: center;
+}
+.dropdown-header{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
