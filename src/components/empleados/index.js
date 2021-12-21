@@ -1,6 +1,7 @@
 import React from 'react';
 import {Container, Nav, Row} from 'react-bootstrap';
 import EmpleadosBuscar from './crud/buscar';
+import EmpleadosCrear from './crud/crear';
 import '../styles/empleados.scss';
 
 export default class Empleados extends React.Component {
@@ -9,6 +10,9 @@ export default class Empleados extends React.Component {
         this.state = {
             currentTab:"buscar"
         };
+    }
+    changeTab(tab) {
+        this.setState({ current: tab });
     }
     render() {
         return(
@@ -30,7 +34,7 @@ export default class Empleados extends React.Component {
                     </Nav>
                 </Row>
                 <Row>
-                    {this.state.currentTab === 'buscar' ? <EmpleadosBuscar/> : null}
+                    {this.state.currentTab === 'buscar' ? (<EmpleadosBuscar/>) : (<EmpleadosCrear changeTab={(tab) => this.changeTab(tab)}/>)}
                 </Row>
             </Container>
         );

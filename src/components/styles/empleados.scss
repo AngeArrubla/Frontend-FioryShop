@@ -1,13 +1,24 @@
 @import 'globals';
 
-#empleados-buscar-container,
 #empleados-container {
     margin-top: 150px;
 }
-#empleados-buscar-container h1{
-    @include title;
+#empleados-crear-container,
+#empleados-buscar-container{
+    margin-top: 50px;
+
+    h1{
+        @include title;
+    }
 }
 
+#empleados-crear-container{
+    margin-bottom: 10px;
+}
+#button{
+    @include button;
+    margin-top: 30px;
+}
 .react-bs-table-sizePerPage-dropdown .dropdown-toggle{
     margin: 20px 0 20px 0;
     @include button;
