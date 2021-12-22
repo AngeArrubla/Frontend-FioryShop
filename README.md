@@ -1,14 +1,27 @@
-# FioryShop React App
+# FioryShop React App <img  align="right" src="https://i.ibb.co/r4XdYHK/Logo.png" alt="Logo" border="0" width="90px" heigth="auto" >
+<img align="center" alt="fondo" width="100%" height="5px" src="https://i.imgur.com/qPuRo9q.jpg"/>
 
-<img src="https://i.ibb.co/r4XdYHK/Logo.png" alt="Logo" border="0" width="30px" heigth="auto">
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<img align="left" src="https://i.ibb.co/1JBNXNJ/Landing.png" alt="Landing" width="40%" heigth="auto">
+<h3> Technologies and Tools<h3>
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm run start`
-
+  <p>  
+    :purple_heart: Integration Git, Github and VSC <br>
+    :purple_heart: MERN (Mongo, Express, React & Node)<br>
+    :purple_heart: JavaScript<br>
+    :purple_heart: Bootstrap<br>
+    :purple_heart: NPM<br>
+    :purple_heart: Api Rest<br>
+    :purple_heart: Heroku<br>
+    :purple_heart: Agile methodology SCRUM
+  </p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+### You can run: `npm run start` <br>
+<br>
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
@@ -45,3 +58,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+Icons-> https://gist.github.com/rxaviers/7360908
