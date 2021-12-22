@@ -1,33 +1,35 @@
-# FioryShop React App <img  align="right" src="https://i.ibb.co/r4XdYHK/Logo.png" alt="Logo" border="0" width="90px" heigth="auto" >
+# FioryShop React App
+
+<img  align="right" src="https://i.ibb.co/r4XdYHK/Logo.png" alt="Logo" border="0" width="90px" heigth="auto">
 <img align="center" alt="fondo" width="100%" height="5px" src="https://i.imgur.com/qPuRo9q.jpg"/>
 
-<img align="left" src="https://i.ibb.co/1JBNXNJ/Landing.png" alt="Landing" width="40%" heigth="auto">
-<h3> Technologies and Tools<h3>
+<img align="left" src="https://i.ibb.co/1JBNXNJ/Landing.png" alt="Landing" width="50%" heigth="auto"><br>
 
-  <p>  
-    :purple_heart: Integration Git, Github and VSC <br>
-    :purple_heart: MERN (Mongo, Express, React & Node)<br>
-    :purple_heart: JavaScript<br>
-    :purple_heart: Bootstrap<br>
-    :purple_heart: NPM<br>
-    :purple_heart: Api Rest<br>
-    :purple_heart: Heroku<br>
-    :purple_heart: Agile methodology SCRUM
-  </p>
+### Technilogies and Tools <br>
+
+:purple_heart: Integration Git, Github and VSC <br>
+:purple_heart: MERN (Mongo, Express, React & Node)<br>
+:purple_heart: JavaScript<br>
+:purple_heart: Bootstrap<br>
+:purple_heart: NPM<br>
+:purple_heart: Api Rest<br>
+:purple_heart: Heroku<br>
+:purple_heart: Agile methodology SCRUM
+
 <br>
 <br>
 <br>
 <br>
 <br>
 <br>
+
 ### You can run: `npm run start` <br>
 <br>
-Runs the app in the development mode.\
+<p>Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
+You will also see any lint errors in the console. </p>
 
 ## Learn More
 
