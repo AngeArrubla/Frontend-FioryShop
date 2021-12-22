@@ -10,9 +10,10 @@ export default class Empleados extends React.Component {
         this.state = {
             currentTab:"buscar"
         };
+        this.changeTab = this.changaTab.bind(this);
     }
     changeTab(tab) {
-        this.setState({ current: tab });
+        this.setState({ currentTab: tab });
     }
     render() {
         return(
@@ -34,7 +35,11 @@ export default class Empleados extends React.Component {
                     </Nav>
                 </Row>
                 <Row>
-                    {this.state.currentTab === 'buscar' ? (<EmpleadosBuscar/>) : (<EmpleadosCrear changeTab={(tab) => this.changeTab(tab)}/>)}
+                    {this.state.currentTab === 'buscar' ? (
+                        <EmpleadosBuscar/>
+                    ) : (
+                        <EmpleadosCrear changeTab={this.changeTab}/>
+                    )}
                 </Row>
             </Container>
         );

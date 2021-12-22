@@ -37,3 +37,12 @@
 .page-link{
     color: $secondary-color;
 }
+
+.nav-link{
+    color: $primary-color;
+    cursor: pointer;
+    
+    &:hover {
+        color: $secondary-color;
+    }
+}
