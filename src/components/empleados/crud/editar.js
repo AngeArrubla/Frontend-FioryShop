@@ -3,12 +3,12 @@ import {Container,Row, Form,Button} from 'react-bootstrap';
 import {request} from '../../helper/helper';
 import Loading from '../../loading';
 import MessagePrompt from '../../prompts/message';
-import { isUndefined, isNull } from 'util';
 
-export default class EmpleadosCrear extends React.Component {
+export default class EmpleadosEditar extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
+            idEmpleado: this.props.getIdEmpleado(),
             rediret: false,
             message: {
                 text:'',
@@ -27,6 +27,25 @@ export default class EmpleadosCrear extends React.Component {
         this.onExitedMessage = this.onExitedMessage.bind(this);
     }
 
+    componentDidMount(){
+        this.getEmpleado();
+    }
+
+    getEmpleado(){
+        this.setState({loading: true});
+        request
+            .get(`/empleados/${this.state.idEmpleado}`)
+            .then((response) => {
+                this.setState({
+                    empleado: response.data,
+                    loading: false,
+                });
+            })
+            .catch((err) => {
+                console.error(err);
+                this.setState({loading: false});
+            });
+    }
     setValue(index, value){
         this.setState({
             empleado:{
@@ -37,25 +56,7 @@ export default class EmpleadosCrear extends React.Component {
     }
 
     guardarEmpleados(){
-        this.setState({loading: true});
-        request
-        .post('/empleados', this.state.empleado)
-        .then((response) => {
-            if (response.data.exito){
-                this.setState({
-                    rediret: response.data.exito,
-                    message: {
-                        text: response.data.msg,
-                        show: true,
-                    },
-                });
-            }
-            this.setState({loading:false});
-        })
-        .catch((err) => {
-            console.error(err);
-            this.setState({loading:true});
-        });
+        console.log('asfdasd')
     }
 
     onExitedMessage() {
@@ -73,36 +74,36 @@ export default class EmpleadosCrear extends React.Component {
                 />
                 <Loading show={this.state.loading}/>
                 <Row>
-                    <h1>Crear Empleados</h1>
+                    <h1>Editar Empleados</h1>
                 </Row>
                 <Row>
                     <Form>
                         <Form.Group className="mb-2" controlId="formBasic">
                             <Form.Label>Nombre</Form.Label>
-                            <Form.Control onChange={(e) => this.setValue('nombre', e.target.value)}/>
+                            <Form.Control value={this.state.empleado.nombre} onChange={(e) => this.setValue('nombre', e.target.value)}/>
                         </Form.Group>
                         <Form.Group className="mb-2" controlId="formBasic">
                             <Form.Label>Apellido Paterno</Form.Label>
-                            <Form.Control onChange={(e) => this.setValue('apellido_p', e.target.value)}/>
+                            <Form.Control value={this.state.empleado.apellido_p} onChange={(e) => this.setValue('apellido_p', e.target.value)}/>
                         </Form.Group>
                         <Form.Group className="mb-2" controlId="formBasic">
                             <Form.Label>Apellido Materno</Form.Label>
-                            <Form.Control onChange={(e) => this.setValue('apellido_m', e.target.value)}/>
+                            <Form.Control value={this.state.empleado.apellido_m} onChange={(e) => this.setValue('apellido_m', e.target.value)}/>
                         </Form.Group>
                         <Form.Group className="mb-2" controlId="formBasic">
                             <Form.Label>Telefono</Form.Label>
-                            <Form.Control onChange={(e) => this.setValue('telefono', e.target.value)}/>
+                            <Form.Control value={this.state.empleado.telefono} onChange={(e) => this.setValue('telefono', e.target.value)}/>
                         </Form.Group>
                         <Form.Group className="mb-2" controlId="formBasic">
                             <Form.Label>Email</Form.Label>
-                            <Form.Control onChange={(e) => this.setValue('mail', e.target.value)}/>
+                            <Form.Control value={this.state.empleado.mail} onChange={(e) => this.setValue('mail', e.target.value)}/>
                         </Form.Group>
                         <Form.Group className="mb-2" controlId="formBasic">
                             <Form.Label>Dirección</Form.Label>
                             <Form.Control onChange={(e) => this.setValue('direccion', e.target.value)}/>
                         </Form.Group>
 
-                        <Button id="button" onClick={() => this.guardarEmpleados()}>Guardar Empleado</Button>
+                        <Button id="button" onClick={() => this.guardarEmpleados}>Guardar Empleado</Button>
                     </Form>
                 </Row>
             </Container>

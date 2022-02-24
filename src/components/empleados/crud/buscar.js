@@ -31,11 +31,18 @@ const columns = [{
 export default class EmpleadosBuscar extends React.Component{
     constructor(props){
         super(props);
-            this.state={};
+        this.state={};
+
+        this.onClickEditButton = this.onClickEditButton.bind(this);
     }
 
     componentDidMount() {
-        
+
+    }
+    onClickEditButton(row) {
+        this.props.setIdEmpleado(row._id);
+
+        this.props.changeTab('editar');
     }
     render(){
 
@@ -45,7 +52,12 @@ export default class EmpleadosBuscar extends React.Component{
                     <h1>Buscar empleados</h1>
                 </Row>
                 <Row>
-                    <DataGrid url="/empleados" columns={columns} />
+                    <DataGrid
+                        url="/empleados"
+                        columns={columns}
+                        showEditButton={true}
+                        onClickEditButton={this.onClickEditButton}
+                    />
                 </Row>
             </Container>
         );
